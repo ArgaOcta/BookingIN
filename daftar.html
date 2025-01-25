@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookingIN</title>
+  <link href="src/output.css" rel="stylesheet">
+  <link rel="icon" href="dist/img/Logo1.png" type="image/x-icon">
+  <!-- AdminLTE CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@4.0.0-beta1/dist/css/adminlte.min.css" integrity="sha256-c66Dhf3TzKZoXxk8aNaf2lu580xGnKke4mjUtbpMqYg=" crossorigin="anonymous">
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+   <!-- Google Font: Source Sans Pro -->
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+   <!-- Font Awesome -->
+   <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+   <!-- Ionicons -->
+   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+   <!-- Tempusdominus Bootstrap 4 -->
+   <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+   <!-- iCheck -->
+   <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+   <!-- JQVMap -->
+   <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
+   <!-- Theme style -->
+   <link rel="stylesheet" href="dist/css/adminlte.min.css">
+   <!-- overlayScrollbars -->
+   <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+   <!-- Daterange picker -->
+   <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+   <!-- summernote -->
+   <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
+</head>
+<body class="bg-gradient-to-r from-white-500 to-blue-700 flex items-center justify-center min-h-screen hold-transition">
+  <div class="preloader flex-column justify-content-center align-items-center">
+    <img class="animation__shake" src="dist/img/Logo1.png" alt="BookingINLogo" height="60" width="60">
+  </div>
+  <!-- Login Container -->
+  <div class="login-box w-96 mt-35">
+    <!-- Card -->
+    <div class="card card-outline shadow-lg p-7 bg-gray-100 rounded-xl">
+      <div class="card-header text-center bg-gray-100">
+        <h1 class="text-3xl font-bold text-gray-600">BookingIN</h1>
+        <hr class="border-gray-300 mt-3 mb-3">
+      </div>
+      <div class="card-body bg-gray-100">
+        <p class="login-box-msg text-gray-600 flex items-center justify-center mb-3">Daftar sekarang untuk memesan</p>
+        <form id="daftarForm" action="#" method="POST">
+             <!-- Nama Lengkap Field -->
+          <div class="relative mb-4 flex items-center justify-center">
+            <input type="text" id="nama" name="nama" placeholder="Nama Lengkap"
+              class="form-control bg-white text-gray-700 rounded-md focus:ring-blue-100 shadow-md focus:outline-none focus:ring focus:border-blue-500 px-7 py-2">
+        </div>
+           <!-- Email Field -->
+           <div class="relative mb-4 flex items-center justify-center">
+            <input type="email" id="email" name="email" placeholder="Email"
+              class="form-control bg-white text-gray-700 rounded-md focus:ring-blue-100 shadow-md focus:outline-none focus:ring focus:border-blue-500 px-7 py-2">
+        </div>
+          <!-- Username Field -->
+          <div class="relative mb-4 flex items-center justify-center">
+            <input type="text" id="username" name="username" placeholder="Username"
+              class="form-control bg-white text-gray-700 rounded-md focus:ring-blue-100 shadow-md focus:outline-none focus:ring focus:border-blue-500 px-7 py-2">
+        </div>
+          <!-- Password Field -->
+          <div class="relative mb-4 flex items-center justify-center">
+            <input type="password" id="password" name="password" placeholder="Password"
+              class="form-control bg-white text-gray-700 rounded-md focus:ring-blue-100 shadow-md focus:outline-none focus:ring focus:border-blue-500 px-7 py-2">
+        </div>
+           <!-- Konfirmasi Password Field -->
+           <div class="relative mb-4 flex items-center justify-center">
+            <input type="password" id="cek_password" name="cek_password" placeholder="Konfirmasi Password"
+              class="form-control bg-white text-gray-700 rounded-md focus:ring-blue-100 shadow-md focus:outline-none focus:ring focus:border-blue-500 px-7 py-2">
+        </div>
+          <!-- Login Button -->
+          <div class="mb-4 flex items-center justify-center">
+            <button type="submit" class="w-60 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-70 0 mt-2">
+              Daftar
+            </button>
+          </div>
+        </form>
+        <!-- Additional Links -->
+        <div class="text-center">
+          <span class="text-gray-500">Sudah punya akun? </span><a href="login.html" class="text-m text-blue-600 hover:underline">Login</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+     <!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+  $.widget.bridge('uibutton', $.ui.button)
+</script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- ChartJS -->
+<script src="plugins/chart.js/Chart.min.js"></script>
+<!-- Sparkline -->
+<script src="plugins/sparklines/sparkline.js"></script>
+<!-- JQVMap -->
+<script src="plugins/jqvmap/jquery.vmap.min.js"></script>
+<script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+<!-- jQuery Knob Chart -->
+<script src="plugins/jquery-knob/jquery.knob.min.js"></script>
+<!-- daterangepicker -->
+<script src="plugins/moment/moment.min.js"></script>
+<script src="plugins/daterangepicker/daterangepicker.js"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<!-- Summernote -->
+<script src="plugins/summernote/summernote-bs4.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="dist/js/pages/dashboard.js"></script>
+<!-- AdminLTE JS -->
+<script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js"></script>
+<!-- JS Function -->
+<script src="script.js"></script>
+</body>
+</html>
